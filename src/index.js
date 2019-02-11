@@ -1,7 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import App from '../src/components/app';
+import Table from '../src/components/table'
 
 ReactDOM.render(
-    <h1 className="container">React Prototypes!</h1>,
+    <App/>
+    <Table/>,
     document.getElementById('root')
 );
