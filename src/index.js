@@ -7,9 +7,6 @@ const user = {
     favColor: 'hotpink'
 }
 
-// const number = Math.floor(Math.random() * 1000) + 1
-
-
 function Greeting(props){
     const {user} = props;
 
@@ -18,14 +15,15 @@ function Greeting(props){
     }
 
     const style = {
-        color: user.favColor || 'chartreuse'
+        color: user.favColor || 'chartreuse',
     }
 
     return <h1 style={style}> Welcome {user.firstName}.</h1>;
 }
 
 function LuckyNumber(props){
-    return <h1> Your Lucky Number is: 346</h1>
+    return <h1>Your Luck Number is: {Math.floor(Math.random() * 1000) + 1}</h1>
+
 }
 ReactDOM.render(
     <div>
@@ -36,38 +34,3 @@ ReactDOM.render(
     document.getElementById('root')
 );
 
-// // Create a function called luckyNumber
-// // Takes no parameters
-// function LuckyNumber(){
-//     // Return a random number between 1-1000
-//     return Math.floor(Math.random() * 1000) + 1
-// }
-//
-// // Create a function called greeting
-// function Greeting(props){
-//     // The parameter will be a user object that has
-//     // a property of name and a property of luckyNumber
-//     const user = {
-//         name: 'Chris',
-//         luckyNumber: = LuckyNumber()
-//     }
-//
-//     // const {user} = props;
-//     return (
-//         // Return a <div> that has a class of container
-//         // and two children elements, a <h1> and a <h2>
-//         <div class="container">
-//             <h1>Sup {props.name}</h1>
-//             <h2 class="text-muted"></h2>
-//         </div>
-//     )
-// }
-//
-// ReactDOM.render(
-//     <h1 className="container">React Prototypes!</h1>
-//     <div>
-//         <Greeting {user.name}="Chris"/>
-//     </div>,
-//     document.getElementById('root')
-//
-// );
