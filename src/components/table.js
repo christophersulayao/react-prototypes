@@ -1,18 +1,55 @@
 import React from 'react';
 
-function Table (){
-    return(
-        <div>
-            <thead class="thead-inverse">
-            <h1>Name</h1>
-            <h1>Course</h1>
-            <h1>Grade</h1>
+export default () => {
+    return (
+        <table className="table ">
+            <thead className="thead-inverse">
+            <tr>
+                <th>Name</th>
+                <th>Course</th>
+                <th>Grade</th>
+            </tr>
             </thead>
-
-            <tbody class="table">
+            <tbody>
+            <tr>
+                <td>Chris Sulayao</td>
+                <td>Growing a beard</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Danika Quinteros</td>
+                <td>Helpful Helper</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>Alejandro Carillo</td>
+                <td>Pimpin</td>
+                <td>70</td>
+            </tr>
             </tbody>
-        </div>
-
-    );
+        </table>
+    )
 }
-export default Table;
+// function Table (){
+//     return(
+//         <table className="table">
+//             <thead className="thead-inverse">
+//                 <tr>
+//                     <th>Name</th>
+//                     <th>Course</th>
+//                     <th>Grade</th>
+//                 </tr>
+//             </thead>
+//
+//             <tbody>
+//                 <tr>
+//                     <th>Name</th>
+//                     <th>Course</th>
+//                     <th>Grade</th>
+//                 </tr>
+//             </tbody>
+//         </table>
+//
+//     );
+// }
+// export default Table;
